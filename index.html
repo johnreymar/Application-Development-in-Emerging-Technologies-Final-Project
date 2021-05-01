@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MY TO DO APP</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Jun Huang" />
+    <meta
+      name="description"
+      content="A vanilla JavaScript todo application with basic UI CRUD functionality."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    /> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    
+  </head>
+  <body>
+    <main class="wrapper">
+      <nav class="navbar">
+        <ul class="nav">
+          <li class="nav__item">My To Do App</li>
+        </ul>
+      </nav>
+      <form class="todo-form">
+        <div class="input-field">
+          <input
+            type="text"
+            id="input--add"
+            class="input"
+            placeholder="e.g. Go to the gym"
+          />
+          <label for="input--add"></label>
+        </div>
+        <button class="button button--add">
+        <i class="fas fa-plus"></i>
+        </button>
+      </form>
+      <ul class="todo-collection"></ul>
+    </main>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  </body>
+</html>
